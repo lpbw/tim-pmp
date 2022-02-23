@@ -1,0 +1,50 @@
+@charset "utf-8";
+@font-face {
+	font-family: GothicR;
+	src:url(../fonts/GOTHIC.TTF)
+}
+@font-face {
+	font-family: GothicB;
+	src:url(../fonts/GOTHICB.TTF)
+}
+@font-face {
+	font-family: Arial;
+	src:url(../fonts/arial.ttf)
+	
+}@font-face {
+	font-family: ArialB;
+	src:url(../fonts/arialbd.ttf)
+}
+.texto_titulos_arial_bold {
+	font-family: ArialB;
+	font-size: 20px;
+	line-height: 19px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+.texto_titulos_arial_regular {
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 19px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+.texto_titulos {
+	font-family: GothicB;
+	font-size: 15px;
+	line-height: 19px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+.texto_info {
+	font-family: GothicR;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}

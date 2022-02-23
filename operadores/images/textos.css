@@ -1,0 +1,101 @@
+@charset "utf-8";
+.usuario {
+	font-family: "Helvetica LT Std";
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.tit_1 {
+	font-family: "Helvetica LT Std";
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+
+.text_grande {
+	font-family: "Helvetica LT Std";
+	font-size: 18px;
+	font-weight: bold;
+	color: #404040;
+	text-decoration: none;
+}
+
+.text_mediano {
+	font-family: "Helvetica LT Std";
+	font-size: 14px;
+	font-weight: bold;
+	color: #404040;
+	text-decoration: none;
+}
+
+.text_mediano_blanco {
+	font-family: "Helvetica LT Std";
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+.olvido {
+	font-family: "Helvetica LT Std";
+	font-size: 12px;
+	font-weight: normal;
+	color: #404040;
+	text-decoration: none;
+}
+
+.texto_chico {
+	font-family: "Helvetica LT Std";
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+.texto_tareas {
+	font-family: "Helvetica LT Std";
+	font-size: 13px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+
+.boton {
+	font-family: "Helvetica LT Std";
+	font-size: 12px;
+	font-weight: normal;
+	color: #003098;
+	text-decoration: none;
+}
+
+
+.forma {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #404040;
+	background-image: url(campo.jpg);
+	width: 203px;
+	height: 22px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-align: left;
+	text-indent: 5px;
+	vertical-align: bottom;
+	top: 0px;
+	background-repeat: no-repeat;
+	line-height: normal;
+	margin: 0px;
+	background-position: 1px -1px;
+	padding: 0px;
+}
