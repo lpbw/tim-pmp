@@ -1,0 +1,7 @@
+correr resultados 360
+
+dis_norm2.php (varias veces hasta que ya no ejecute nada)
+dis_norm2_ex.php (igual)
+calcula_calificaciones.php
+calcula_obj.php
+calcula.php
