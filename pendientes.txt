@@ -1,2 +1,0 @@
-calculo de normalizacion dis_norm2
-tomar en cuenta la revision al calcular la desviacion y el promedio y al hacer update
