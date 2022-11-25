@@ -1877,3 +1877,26 @@ Stack trace:
 #0 /home1/bluewol5/public_html/timpmp/operadores/index.php(7): include()
 #1 {main}
   thrown in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php on line 2
+[27-Feb-2022 03:10:58 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php:2
+Stack trace:
+#0 /home1/bluewol5/public_html/timpmp/operadores/fin_360_operadores.php(8): include()
+#1 {main}
+  thrown in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php on line 2
+[23-Mar-2022 22:25:23 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php:2
+Stack trace:
+#0 /home1/bluewol5/public_html/timpmp/operadores/index.php(7): include()
+#1 {main}
+  thrown in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php on line 2
+[17-Apr-2022 12:40:42 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php:2
+Stack trace:
+#0 /home1/bluewol5/public_html/timpmp/operadores/fin_360_operadores.php(8): include()
+#1 {main}
+  thrown in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php on line 2
+[17-Apr-2022 22:36:11 America/Boise] PHP Warning:  include(checar_sesion_admin.php): failed to open stream: No such file or directory in /home1/bluewol5/public_html/timpmp/operadores/evaluacion_360_operadores.php on line 3
+[17-Apr-2022 22:36:11 America/Boise] PHP Warning:  include(checar_sesion_admin.php): failed to open stream: No such file or directory in /home1/bluewol5/public_html/timpmp/operadores/evaluacion_360_operadores.php on line 3
+[17-Apr-2022 22:36:11 America/Boise] PHP Warning:  include(): Failed opening 'checar_sesion_admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/bluewol5/public_html/timpmp/operadores/evaluacion_360_operadores.php on line 3
+[17-Apr-2022 22:36:11 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php:2
+Stack trace:
+#0 /home1/bluewol5/public_html/timpmp/operadores/evaluacion_360_operadores.php(4): include()
+#1 {main}
+  thrown in /home1/bluewol5/public_html/timpmp/operadores/coneccion.php on line 2
