@@ -1140,7 +1140,7 @@ $(function () {
 		  where r1.id_evaluado=$idU and revision=$revision
 
 		  order by r1.id_numero";
-
+// echo $query3;
 		     $result3 = mysqli_query($enlace,$query3) or die("La consulta falla P3: ". mysqli_error($enlace) );
 
 						$count3=0;
