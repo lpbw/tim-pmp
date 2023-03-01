@@ -60,7 +60,7 @@
 			  </tr>
 			  <tr>
 					<td class=\"texto_chico\">
-					<div align=\"center\">Please be sure to complete the survey by December 3rd<br>HR  Lic. Gloria Martinez gmartinez01@bellflight.com </div></td>
+					<div align=\"center\">Please be sure to complete the survey by January 12th<br>HR  Lic. Gloria Martinez gmartinez01@bellflight.com </div></td>
 			  </tr>
 			</table>
 			</body>

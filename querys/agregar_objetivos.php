@@ -59,6 +59,14 @@
             $fecha_limite = $_POST['fecha_limite'];
             $nuevo_id_objetivo = 0;
 
+            $consulta_plan = "SELECT * FROM planes WHERE revision=$revision AND id_empleado=$id_empleado";
+            $resultado_plan = mysqli_query($enlace,$consulta_plan) or die("La consulta:$consulta_plan ". mysqli_error($enlace));
+            // var_dump(@mysqli_num_rows($resultado_plan));die();
+            if (@mysqli_num_rows($resultado_plan) == 0) {
+                $consulta  = "insert into planes(id_empleado, revision, estatus) value($id_empleado, $revision, 0)";
+                $resultado = mysqli_query($enlace,$consulta) or die("La consulta fall&oacute;P1:$consulta ". mysqli_error($enlace) );
+            }
+
             $agregar_objetivo  = "INSERT INTO objetivos_new(id_empleado, numero, id_objetivo,id_estrategia, descripcion,inicio, limite, revision) VALUES($id_empleado, 1, '$id_objetivo', '$id_estrategia', '$descripcion', '$fecha_inicio', '$fecha_limite', '$revision')";
 		    $resultado_agregar = mysqli_query($enlace,$agregar_objetivo) or die("consulta: $agregar_objetivo". mysqli_error($enlace) );
 		    $nuevo_id_objetivo = mysqli_insert_id($enlace);
