@@ -7,7 +7,7 @@ $grados_n[0]="1";
 $grados_n[1]="3";
 $grados_n[2]="5";
 
-	$consulta  = "select id,ingles from tex_expectativas  order by id limit 0,1";
+	$consulta  = "select id,ingles from tex_expectativas WHERE id >= 7  order by id limit 0,1";
 	$resultado = mysqli_query($enlace,$consulta) or die("La consulta fall&oacute;P1:$consulta ". mysqli_error($enlace) );//. mysqli_error($enlace)	
 	if(@mysqli_num_rows($resultado)>=1)
 	{
@@ -57,7 +57,7 @@ $grados_n[2]="5";
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="colorbox/jquery.colorbox-min.js"></script>
 <style type="text/css">
-<!--
+
 body {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -66,7 +66,7 @@ body {
 	background-image: url();
 	background-color: #E5E5E5;
 }
--->
+
 </style>
 <link href="images/textos.css" rel="stylesheet" type="text/css" />
 <script>
@@ -79,8 +79,6 @@ body {
 	});
 </script>
 <script type="text/javascript">
-<!--
-<!--
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
@@ -153,13 +151,11 @@ function MM_swapImage() { //v3.0
 //-->
 </script>
 <style type="text/css">
-<!--
 .style1 {font-size: 24px}
 .style10 {font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 16px; color: #104352; }
 .style5 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; }
 .style11 {font-size: large}
 .style9 {font-size: x-large}
--->
 </style>
 </head>
 
@@ -276,7 +272,7 @@ function MM_swapImage() { //v3.0
 	
 ?>
                         </table></td>
-                        <td width="41%"><img src="images/modelo_eng.png"  height="400" /></td>
+                        <!--<td width="41%"><img src="images/modelo_eng.png"  height="400" /></td>-->
                       </tr>
                     </table>
                     <p align="center" class="texto_contenido2"><br />

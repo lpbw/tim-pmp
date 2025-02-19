@@ -146,7 +146,6 @@ $contador_evaluados=0;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="colorbox/jquery.colorbox-min.js"></script>
 <style type="text/css">
-<!--
 body {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -155,7 +154,7 @@ body {
 	background-image: url();
 	background-color: #E5E5E5;
 }
--->
+
 </style>
 <link href="images/textos.css" rel="stylesheet" type="text/css" />
 <script>
@@ -168,8 +167,7 @@ body {
 	});
 </script>
 <script type="text/javascript">
-<!--
-<!--
+
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
@@ -199,7 +197,6 @@ function buscar()
 	document.form1.action="reporte_planes.php";
 	document.form1.submit();
 }
-//-->
 function valida(){
 	if(document.form1.evaluador.value=="")
 	{
@@ -239,15 +236,13 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
-//-->
 </script>
 <style type="text/css">
-<!--
 .style1 {font-size: 24px}
 .style5 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; }
 .style9 {font-size: x-large}
 .style6 {font-size: 18px}
--->
+
 </style>
 </head>
 

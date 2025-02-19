@@ -16,7 +16,7 @@ $tipo="";
 $grados_n[0]="1";
 $grados_n[1]="3";
 $grados_n[2]="5";
-
+var_dump($_POST);
 $consulta  = "SELECT revision, etapa, etapa_360 from etapa where id=1";
 	$resultado = mysqli_query($enlace,$consulta) or die("La consulta fall&oacute;P1:$consulta ". mysqli_error($enlace) );//. mysqli_error($enlace)	
 	if(@mysqli_num_rows($resultado)>=1)

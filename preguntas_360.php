@@ -7,7 +7,10 @@
 include "checar_sesion_admin.php";
 include "coneccion_i.php";
 $idU=$_SESSION['idU'];
+$contador_preguntas = 0;
 $siguiente=$_POST['siguiente'];
+// var_dump($siguiente);
+$contador_preguntas = $siguiente+1;
 $inicial=$siguiente;
 $v_script="";
 $nombre_competencia="";
@@ -103,7 +106,8 @@ $n_sql="i";
 $contador_comp=0;
 $contador_evaluados=0;
 
-		$consulta = "select tex_competencias.id, tex_competencias.nombre, tex_expectativas.nombre as exp, uno, tres, cinco, descripcion  from tex_competencias inner join tex_expectativas on tex_competencias.id_expectativa=tex_expectativas.id order by tex_competencias.id";
+
+		$consulta = "select tex_competencias.id, tex_competencias.nombre, tex_expectativas.nombre as exp, uno, tres, cinco, descripcion  from tex_competencias inner join tex_expectativas on tex_competencias.id_expectativa=tex_expectativas.id WHERE tex_expectativas.id >= 7 order by tex_competencias.id";
 		$co=0;
 		$resultado = mysqli_query($enlace,$consulta) or die("La consulta fall&oacute;P13:$consulta ". mysqli_error($enlace) );//. mysqli_error($enlace)	
 		while(@mysqli_num_rows($resultado)>$co)
@@ -118,6 +122,7 @@ $contador_evaluados=0;
 			$grados3[$co]= $res[4];
 			$grados5[$co]= $res[5];
 			$co++;	
+			
 		}	
 		
 		for($o=$inicial ;$o<$contador_comp; $o++){
@@ -146,7 +151,6 @@ $contador_evaluados=0;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="colorbox/jquery.colorbox-min.js"></script>
 <style type="text/css">
-<!--
 body {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -155,7 +159,6 @@ body {
 	background-image: url();
 	background-color: #E5E5E5;
 }
--->
 </style>
 <link href="images/textos.css" rel="stylesheet" type="text/css" />
 <script>
@@ -168,8 +171,6 @@ body {
 	});
 </script>
 <script type="text/javascript">
-<!--
-<!--
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
@@ -199,7 +200,6 @@ function buscar()
 	document.form1.action="reporte_planes.php";
 	document.form1.submit();
 }
-//-->
 function valida(){
 	if(document.form1.evaluador.value=="")
 	{
@@ -242,12 +242,10 @@ function MM_swapImage() { //v3.0
 //-->
 </script>
 <style type="text/css">
-<!--
 .style1 {font-size: 24px}
 .style5 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; }
 .style9 {font-size: x-large}
 .style6 {font-size: 18px}
--->
 </style>
 </head>
 
@@ -286,7 +284,7 @@ function MM_swapImage() { //v3.0
             <td height="250" valign="top" bgcolor="#eeeeee"><div align="center">
                 <table width="792" border="0">
                   <tr>
-                    <td bgcolor="#FFFFFF"><div align="right"><? echo $competencias[$siguiente] ?>-30</div></td>
+                    <td bgcolor="#FFFFFF"><div align="right"><? echo $contador_preguntas."-".$co; ?></div></td>
                   </tr>
                   <tr>
                     <td width="602" bgcolor="#999999"><div align="left"><span class="nombre_admin"><span class="text_mediano_blanco style6"><? echo"$competencias_exp[$siguiente]";?></span><br />

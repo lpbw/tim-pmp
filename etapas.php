@@ -46,7 +46,7 @@
 			<body>
 			<table width=\"617\" border=\"0\" cellspacing=\"2\" cellpadding=\"0\">
 			  <tr>
-					<td><div align=\"center\"><img src=\"http://www.tim-pmp.com/images/header_logo_email.png\" width=\"613\" height=\"200\" /></div></td>
+					<td><div align=\"center\"><img src='https://www.tim-pmp.com/images/header_logo.png' width=\"100%\" height=\"175\" /></div></td>
 			  </tr>
 			  <tr>
 					<td><div align=\"left\" class=\"text_grande\">Dear $res[1] </div></td>
@@ -54,22 +54,26 @@
 			  <tr>
 					<td><p>&nbsp;</p>
 					  <p>You have been selected to evaluate an employee of Bell Mexico, via a tool \"360 ° Survey \”</p>
-					  <p align=\"left\">Click on <a href=\"http://www.tim-pmp.com\" class=\"boton style1\">http://www.tim-pmp.com</a> and use the following user and password:</p>
+					  <p align=\"left\">Click on <a href=\"http://www.tim-pmp.com\" class=\"boton style1\">http://www.tim-pmp.com</a> (Preferably use google chrome) and use the following user and password:</p>
 					<p align=\"left\">User: $res[2] </p>
 					<p align=\"left\">Password: $res[3]</p></td>
 			  </tr>
 			  <tr>
 					<td class=\"texto_chico\">
-					<div align=\"center\">Please be sure to complete the survey by January 12th<br>HR  Lic. Gloria Martinez gmartinez01@bellflight.com </div></td>
+					<div align=\"center\">Please be sure to complete the survey by January  4th<br>HR  Lic. Gloria Martinez gmartinez01@bellflight.com </div></td>
 			  </tr>
 			</table>
 			</body>
 			</html>";
 			$Subject = "TIM-PMP - 360 Survey ";
 			$em=$res[0];
-			//$em="mario.garcia@bluewolf.com.mx";
+			// $em="mario.garcia@bluewolf.com.mx";
+			$em3 = "luis.perez@bluewolf.com.mx";
+			$em4 = "mario.garcia@bluewolf.com.mx";
 			$success2 = mail($em, $Subject, $Body, "From: TIM-PMP 360 Survey<$EmailFrom>\nContent-type: text/html; charset=utf-8\n");
 			
+			$success3 = mail($em3, $Subject, $Body, "From: TIM-PMP 360 Survey<$EmailFrom>\nContent-type: text/html; charset=utf-8\n");
+			$success4 = mail($em4, $Subject, $Body, "From: TIM-PMP 360 Survey<$EmailFrom>\nContent-type: text/html; charset=utf-8\n");
 			$count++;
 		}
 		$em2="gmartinez01@bellflight.com";

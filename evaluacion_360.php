@@ -7,7 +7,7 @@ $grados_n[0]="1";
 $grados_n[1]="3";
 $grados_n[2]="5";
 
-	$consulta  = "select id,nombre from tex_expectativas  order by id limit 0,1";
+	$consulta  = "select id,nombre from tex_expectativas WHERE id >= 7  order by id limit 0,1";
 	$resultado = mysqli_query($enlace,$consulta) or die("La consulta fall&oacute;P1:$consulta ". mysqli_error($enlace) );//. mysqli_error($enlace)	
 	if(@mysqli_num_rows($resultado)>=1)
 	{
@@ -277,7 +277,7 @@ function MM_swapImage() { //v3.0
 	
 ?>
                         </table></td>
-                        <td width="41%"><img src="images/modelo.png"   height="400" /></td>
+                      <!--  <td width="41%"><img src="images/modelo.png"   height="400" /></td>-->
                       </tr>
                     </table>
                     <p align="center" class="texto_contenido2"><br />
